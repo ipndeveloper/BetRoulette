@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "9d7578b2-2e13-4cf9-a941-51bd07e7c364",
+		"name": "Roullette",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Open Roulette",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Roulette/6b63dfda-3661-487a-be19-b8d9dc4f2f33/OpenRoulette",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Roulette",
+						"6b63dfda-3661-487a-be19-b8d9dc4f2f33",
+						"OpenRoulette"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Bet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "c7acbb4f-f827",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"RouletteId\" : \"6b63dfda-3661-487a-be19-b8d9dc4f2f33\",\r\n    \"BetMoney\" :  300,\r\n    \"NumberBet\" : 10\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Roulette/ToBet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Roulette",
+						"ToBet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close Roulette",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Roulette/6b63dfda-3661-487a-be19-b8d9dc4f2f33/CloseRoulette",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Roulette",
+						"6b63dfda-3661-487a-be19-b8d9dc4f2f33",
+						"CloseRoulette"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Roulettes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Roulette/GetAllRoulettes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Roulette",
+						"GetAllRoulettes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Roulette",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Roulette/CreateRoulette",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Roulette",
+						"CreateRoulette"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

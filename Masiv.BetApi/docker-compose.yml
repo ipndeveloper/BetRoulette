@@ -1,0 +1,32 @@
+﻿
+version: "3.4"
+networks:
+  app-tier:
+    driver: bridge
+services:
+  masiva_api:
+    depends_on:
+      - "redis_image"
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ~/.aws/:/root/.aws:ro
+    networks:
+      - app-tier
+    links:
+      - "redis_image"
+  redis_image:
+    container_name: "redisdb"
+    image: "bitnami/redis:latest"
+    ports:
+      - "63799:6379"
+    tty: true
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    networks:
+      - app-tier
+
+
+     
+   
