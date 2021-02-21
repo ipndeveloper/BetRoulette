@@ -4,9 +4,9 @@ y probar que tan buena es tu suerte.
 # Configuración de aplicación
 
 ### Usar AWS Service en el aplicativo.
-El aplicativo usa como acceso a datos redis cache y el manejo de log atravéz de cloudwach ambos servicios alojados en AWS. Cuando se trabaje de forma local (development) el aplicativo omite el uso de redis y cloudwatch.Si se desea usar tales servicios   se tiene que tener los siguientes requisitos.
+El aplicativo usa como acceso a datos redis cache y el manejo de log atravéz de cloudwach ambos servicios alojados en AWS. Cuando se trabaje de forma local (development) el aplicativo omite el uso de cloudwatch y trabaja con una versión de redis local.Si se desea usar tales servicios   se tiene que tener los siguientes requisitos.
 - Crear redis en aws y obtener cadena de conexión.
-- Crear secret manager, ahi almacenaremos la cadena de conexión de redis nombre de key ConnectionStrings__MyTestApp.
+- Crear secret manager nombre de key ConnectionStrings__MyTestApp, ahi almacenaremos la cadena de conexión de redis.
 - Asignar ASPNETCORE_ENVIRONMENT = Production en dockerfile
 - Tener las credenciales de AWS en la carpeta "%UserProfile%\.aws"
 
