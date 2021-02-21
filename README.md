@@ -1,4 +1,4 @@
-# BetRoulette
+# Bet Roulette
  Apuestas en el juego de la ruleta. es un juego donde puedes elegir un número del 0-36 o 37-38 que representan el color rojo y negro respectivamente. apostar una cantidad de   dinero
 y probar que tan buena es tu suerte.
 # Configuración de aplicación
