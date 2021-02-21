@@ -17,7 +17,7 @@ El aplicativo usa como acceso a datos redis cache y el manejo de log atravéz de
 - docker-compose up
 ### Hacer uso de la api
 - adjuntar a postam el archivo Roullette.postman_collection.json
-### otros proyectos desarrollados por mi.
+### Otros proyectos desarrollados por mi.
 
 - Jira TrackingGit: https://youtu.be/kA4mBo4oRlE
 - BundleAnalyzer : https://youtu.be/lD7vOq4bb00
